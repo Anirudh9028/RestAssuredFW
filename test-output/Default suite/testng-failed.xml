@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="api.tests.UserModuleTestCase">
+      <class name="api.endpoints.Routes">
         <methods>
-          <include name="getUserTC"/>
-          <include name="setUp"/>
-          <include name="creatUserTC"/>
+          <include name="show"/>
         </methods>
-      </class> <!-- api.tests.UserModuleTestCase -->
+      </class> <!-- api.endpoints.Routes -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

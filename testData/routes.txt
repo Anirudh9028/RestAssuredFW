@@ -1,0 +1,26 @@
+baseUrl= https://gorest.co.in/public/v2
+bearerToken = "da865475d9ba87e62bdfeb533f594757b6d5c26f38c134f595aa89a47db39ba3"
+postUrl = baseUrl+ "/users"
+getUrl = baseUrl + "/users/{id}"
+putUrl = baseUrl + "/users/{id}"
+deleteUrl = baseUrl + "/users/{id}"
+
+
+public void show() throws IOException {
+	
+ pr = new Properties ();
+path = System.getProperty("user.dir") +"\\testData\\routes.txt";
+  fis = new FileInputStream (path) ;
+	pr.load(fis);
+	
+	
+ baseUrl = pr.getProperty("baseUrl");
+ bearerToken = pr.getProperty("bearerToken");
+ postUrl = pr.getProperty("postUrl");
+ getUrl = pr.getProperty("getUrl");
+ putUrl = pr.getProperty("putUrl");
+ deleteUrl = pr.getProperty("deleteUrl");
+ 
+ System.out.println(baseUrl);
+	
+}
